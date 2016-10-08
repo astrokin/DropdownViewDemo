@@ -60,7 +60,7 @@ typedef enum {kFullyFolded=0,kMidleFolded,kFullyUnfolded} tFoldedState;
     [self.btnFoldButton addGestureRecognizer:panRecognizer];
     panRecognizer.cancelsTouchesInView = YES;
     
-    [self.btnFoldButton addTarget:self action:@selector(buttonTouchDownRepeat:event:) forControlEvents:UIControlEventTouchDownRepeat];
+    [self.btnFoldButton addTarget:self action:@selector(buttonTouchDownRepeat:event:) forControlEvents:UIControlEventTouchUpInside];
     fOriginalFrame=self.svwUpperSubview.frame;
     foldedState=kFullyFolded;
     finalLowerPoint.x= screenWidth/2-self.btnFoldButton.frame.size.width/2;
@@ -75,13 +75,10 @@ typedef enum {kFullyFolded=0,kMidleFolded,kFullyUnfolded} tFoldedState;
     currentMovingPoint=startMovingPoint;
 }
 - (void) buttonTouchDownRepeat:(id)sender event:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    if(touch.tapCount == 2) {
-        if(foldedState==kFullyFolded){
-            [self goToUpperFinalPoint:YES];
-        } else{
-            [self goToLowerFinalPoint:YES];
-        }
+    if(foldedState==kFullyFolded){
+        [self goToUpperFinalPoint:YES];
+    } else{
+        [self goToLowerFinalPoint:YES];
     }
 }
 - (CGPoint) getPointFromButton:(UIButton*)aUIButton{
