@@ -17,7 +17,7 @@
 		5A7EA7061B1B6A1300C4F2EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7EA7051B1B6A1300C4F2EB /* Images.xcassets */; };
 		5A7EA7091B1B6A1300C4F2EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7EA7071B1B6A1300C4F2EB /* LaunchScreen.xib */; };
 		5A7EA7151B1B6A1300C4F2EB /* DropdownViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EA7141B1B6A1300C4F2EB /* DropdownViewDemoTests.m */; };
-		5A7EA7211B1B6AB100C4F2EB /* JCDropDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EA7201B1B6AB100C4F2EB /* JCDropDownViewController.m */; };
+		C0C599F61DA9A16A007FC38A /* JCDropDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C599F51DA9A16A007FC38A /* JCDropDownViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		5A7EA70E1B1B6A1300C4F2EB /* DropdownViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropdownViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7EA7131B1B6A1300C4F2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A7EA7141B1B6A1300C4F2EB /* DropdownViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropdownViewDemoTests.m; sourceTree = "<group>"; };
-		5A7EA71F1B1B6AB100C4F2EB /* JCDropDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDropDownViewController.h; sourceTree = "<group>"; };
-		5A7EA7201B1B6AB100C4F2EB /* JCDropDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDropDownViewController.m; sourceTree = "<group>"; };
+		C0C599F41DA9A16A007FC38A /* JCDropDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDropDownViewController.h; sourceTree = "<group>"; };
+		C0C599F51DA9A16A007FC38A /* JCDropDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDropDownViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5A6842E21B1C213600D289D8 /* MapKit.framework */,
-				5A7EA71E1B1B6A1E00C4F2EB /* DropdownView */,
+				C0C599F31DA9A16A007FC38A /* DropdownView */,
 				5A7EA6F71B1B6A1300C4F2EB /* DropdownViewDemo */,
 				5A7EA7111B1B6A1300C4F2EB /* DropdownViewDemoTests */,
 				5A7EA6F61B1B6A1300C4F2EB /* Products */,
@@ -133,14 +133,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5A7EA71E1B1B6A1E00C4F2EB /* DropdownView */ = {
+		C0C599F31DA9A16A007FC38A /* DropdownView */ = {
 			isa = PBXGroup;
 			children = (
-				5A7EA71F1B1B6AB100C4F2EB /* JCDropDownViewController.h */,
-				5A7EA7201B1B6AB100C4F2EB /* JCDropDownViewController.m */,
+				C0C599F41DA9A16A007FC38A /* JCDropDownViewController.h */,
+				C0C599F51DA9A16A007FC38A /* JCDropDownViewController.m */,
 			);
-			name = DropdownView;
-			path = DropdownViewDemo;
+			path = DropdownView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +246,7 @@
 			files = (
 				5A7EA7011B1B6A1300C4F2EB /* ViewController.m in Sources */,
 				5A7EA6FE1B1B6A1300C4F2EB /* AppDelegate.m in Sources */,
-				5A7EA7211B1B6AB100C4F2EB /* JCDropDownViewController.m in Sources */,
+				C0C599F61DA9A16A007FC38A /* JCDropDownViewController.m in Sources */,
 				5A7EA6FB1B1B6A1300C4F2EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

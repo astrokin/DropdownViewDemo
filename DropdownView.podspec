@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "DropdownViewDemo"
+  s.name             = "DropdownView"
   s.version          = "1.0"
   s.summary          = "DrowpdownView control demo"
   s.description      = "This is a simple control that allows see the bottom view by sliding the upper view pressing the button. Double tap on the button unfold (or folds) the upper view."
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.module_name = 'DropdownViewDemo'
-  s.source_files = 'DropdownViewDemo/DropdownViewDemo/JCDropDownViewController.h', 'DropdownViewDemo/DropdownViewDemo/JCDropDownViewController.m'
+  s.module_name = 'DropdownView'
+  s.source_files = 'DropdownView/DropdownView/*.{h,m}'
 end
